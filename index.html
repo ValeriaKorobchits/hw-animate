@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-animate.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+</head>
+<body ng-app="cityApp">
+    <script type="text/ng-template" id="animate-project.html">
+        <h2>Title: {{film.title}}</h2>
+        <p>Country: {{film.country}}</p>
+        <p>Year: {{film.year}}</p>
+        <p>Genre: {{film.genre}}</p> 
+        <p>Producer: {{film.producer}}</p> 
+    </script>
+    <h1>Popular films</h1>
+    <ul>
+        <li><a href="#!/it">It</a></li>
+        <li><a href="#!/smile">Smile</a></li>
+        <li><a href="#!/avatar">Avatar 1</a></li>
+        <li><a href="#!/venom">Venom</a></li>
+        <li><a href="#!/blackadam">Black Adam</a></li>
+        <li><a href="#!/lostcity">The lost city</a></li>
+    </ul>
+    <div class="city-container">
+        <div class="city-view" ng-view></div>
+    </div>
+
+<script src="app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+</body>
+</html>
